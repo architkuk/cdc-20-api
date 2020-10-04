@@ -14,7 +14,6 @@ app = Flask(__name__)
 def predict():
     # get data
     data = request.get_json(force=True)
-    print(data)
 
     # create list from data
     model_data = []
@@ -27,13 +26,14 @@ def predict():
     model_data.append(int(data['businessOrCommercial']))
 
     # predictions
-    result = model.predict([model_data])
+    #result = model.predict([model_data])
 
     # send back to browser
     output = {'results': int(result[0])}
 
     # return data
-    return jsonify(results=output)
+    #return jsonify(results=output)
+    return jsonify(results=data)
 
 
 if __name__ == '__main__':
