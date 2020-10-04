@@ -29,7 +29,7 @@ def predict():
     #result = model.predict([model_data])
 
     # send back to browser
-    output = {'results': int(result[0])}
+    output = {'results': int(44))}
 
     # return data
     #return jsonify(results=output)
