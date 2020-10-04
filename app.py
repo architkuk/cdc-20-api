@@ -17,7 +17,7 @@ def predict():
 
    # create list from data
     model_data = []
-    model_data.append(float(data['income']))
+    model_data.append(float(data['income']/1000))
     model_data.append(float(data['loanAmt']))
     model_data.append(float(data['propertyVal']))
     model_data.append(int(data['type']))
