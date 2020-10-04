@@ -32,7 +32,7 @@ def predict():
 
     # return data
     #return jsonify(results=output)
-    return jsonify(results=data)
+    return jsonify(results=output)
 
 
 if __name__ == '__main__':
